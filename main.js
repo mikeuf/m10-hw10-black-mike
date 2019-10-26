@@ -21,15 +21,18 @@ const getFreezingTemp = (temp) => {
 
 function setTemp() { 
   console.log('setTemp()');
-const inputTemp = document.getElementById('input-temp').value;
+  const inputTemp = document.getElementById('input-temp').value;
   const spanWaterTemp = document.getElementById('water-temp');
   const textNode = document.createTextNode(inputTemp);
   spanWaterTemp.appendChild(textNode);
+
+  setTimeout(() => {
+    alert('yo');
+  }, 3000);
 }
 
-
 function addEventClick(element) {
-element.addEventListener('click', setTemp);
+  element.addEventListener('click', setTemp);
 }
 
 getBoilingTemp(TemperatureStandards.BOILING_POINT);
