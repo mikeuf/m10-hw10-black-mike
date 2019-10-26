@@ -1,6 +1,6 @@
 // It is always helpful to use comments in your code!
 
-const Temperatures = {
+const TemperatureStandards = {
   BOILING_POINT: '212',
   FREEZING_POINT:'32'
 }
@@ -19,6 +19,21 @@ const getFreezingTemp = (temp) => {
 }
 
 
-getBoilingTemp(Temperatures.BOILING_POINT);
-getFreezingTemp(Temperatures.FREEZING_POINT);
+function setTemp() { 
+  console.log('setTemp()');
+const inputTemp = document.getElementById('input-temp').value;
+  const spanWaterTemp = document.getElementById('water-temp');
+  const textNode = document.createTextNode(inputTemp);
+  spanWaterTemp.appendChild(textNode);
+}
+
+
+function addEventClick(element) {
+element.addEventListener('click', setTemp);
+}
+
+getBoilingTemp(TemperatureStandards.BOILING_POINT);
+getFreezingTemp(TemperatureStandards.FREEZING_POINT);
+
+addEventClick(document.getElementById('button-submit-input-temp'));
 
