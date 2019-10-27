@@ -1,0 +1,24 @@
+{
+  "name": "m10-hw10-black-mike",
+  "version": "1.0.0",
+  "description": "A form that displays standard temperatures and allows the user to add their own temperature for evaluation",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeuf/m10-hw10-black-mike.git"
+  },
+  "author": "Mike Black",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikeuf/m10-hw10-black-mike/issues"
+  },
+  "homepage": "https://github.com/mikeuf/m10-hw10-black-mike#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
