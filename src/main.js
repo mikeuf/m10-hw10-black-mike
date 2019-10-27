@@ -42,7 +42,7 @@ const showStatus = (status) => {
 
 // Reset all sections to hidden, so only the correct one appears at a time 
 function resetStatus () {
-  sectionStatusList = document.getElementsByTagName('footer')[0].childNodes;
+  const sectionStatusList = document.getElementsByTagName('footer')[0].childNodes;
   for (var i = 0, len = sectionStatusList.Length; i < len; ++i) {
     if (sectionStatusList[i].classList.contains('show')) {
       sectionStatusList[i].classList.remove('show');
